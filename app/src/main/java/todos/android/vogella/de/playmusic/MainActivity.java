@@ -29,6 +29,7 @@ public class MainActivity extends ActionBarActivity {
             public void onCompletion(MediaPlayer mp) {
                 int duration = mp.getDuration()/1000;
                 Toast.makeText(getApplicationContext(), "Duration " + duration + " seconds" , Toast.LENGTH_LONG).show();
+                playMusic.setText("Play");
             }
         });
 
